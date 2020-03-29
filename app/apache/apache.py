@@ -60,6 +60,6 @@ class Apache:
 if __name__ == '__main__':
     apache = Apache()
     apache.create_vhost("8080", "test.com.conf", "sensors",
-                        "/srv/http/", "test.com.conf")
+                        "/etc/apache2", "test.com.conf")
     apache.edit_vhost("test.conf.com", serverName="test.in")
     # apache.delete_vhost("test.conf.com")
